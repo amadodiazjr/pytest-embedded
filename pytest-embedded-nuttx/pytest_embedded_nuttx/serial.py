@@ -122,7 +122,7 @@ class NuttxSerial(EspSerial):
                 self.port,
                 '--baud',
                 str(self.esptool_baud),
-                'write-flash',
+                'write_flash',
                 *flash_files,
                 *flash_settings,
             ],
